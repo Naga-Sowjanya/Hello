@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>check the range:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var n=30;
+  if (n > 10 && n<100) {
+    n = "value is in range";
+  } else if (n > 100) {
+    n= "value is exceeds";
+  } else {
+    n= "value is below 10";
+  }
+  document.getElementById("demo").innerHTML = n;
+}
+var var1 = 0, var2 = 1, var3;
+document.write("Here is the Fibonacci series with 10 values : ");
+while(var1<40)
+{
+document.write(var1 + " ");
+var3 = var1+var2;
+var1 = var2;
+var2 = var3;
+}
+</script>
+
+</body>
+</html>
